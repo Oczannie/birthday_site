@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张海燕女士，生日快乐！</title>
+    <meta
+        name="description"
+        content="送给张海燕女士的一份花开富贵、搞笑又热闹的生日祝福网站。"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="top-glow"></div>
+        <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+        <div class="meme-pop-layer" id="memePopLayer" aria-hidden="true"></div>
+        <div class="love-rain-layer" id="loveRainLayer" aria-hidden="true"></div>
+        <div class="page-bougainvillea bouquet-top-left" aria-hidden="true"></div>
+        <div class="page-bougainvillea bouquet-top-right" aria-hidden="true"></div>
+        <div class="page-bougainvillea bouquet-mid-right" aria-hidden="true"></div>
+        <div class="page-bougainvillea bouquet-bottom-left" aria-hidden="true"></div>
+
+        <!--
+            音乐替换位置：
+            1. 把 assets/music/good_luck.mp3 换成你想要的背景音乐
+            2. 把 assets/music/happy_birthday.mp3 换成生日快乐歌
+        -->
+        <audio id="bgMusic" preload="auto" loop autoplay>
+            <source src="assets/music/good_luck.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="birthdaySong" preload="auto">
+            <source src="assets/music/happy_birthday.mp3" type="audio/mpeg">
+        </audio>
+
+        <header class="hero section" id="top">
+            <div class="hero-floral-frame" aria-hidden="true">
+                <span class="frame-ring"></span>
+                <span class="peony peony-left"></span>
+                <span class="peony peony-right"></span>
+                <span class="bougainvillea-leaf leaf-one"></span>
+                <span class="bougainvillea-leaf leaf-two"></span>
+                <span class="bougainvillea-spray spray-one"></span>
+                <span class="bougainvillea-spray spray-two"></span>
+                <span class="bougainvillea-spray spray-three"></span>
+            </div>
+
+            <div class="hero-content reveal">
+                <p class="hero-kicker">花开富贵频道特别报道</p>
+                <h1>张海燕女士，生日快乐！</h1>
+                <p class="hero-subtitle">
+                    Today you are the most beautiful birthday queen！
+                    活力四射，精神饱满，永远 young，小说一翻开就 automatically 女主角附体。
+                </p>
+
+                <div class="hero-badges">
+                    <span>花开富贵本人</span>
+                    <span>今日顶流寿星</span>
+                    <span>气场 very 旺</span>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-text">
+                        <h2>今日主题：富贵、热闹、非常有面儿</h2>
+                        <p>
+                            金光先打起来，花朵先开起来，寿星的快乐先安排起来。
+                            今天的张海燕女士，必须是全场最闪、最旺、最有主角感的那一位。
+                        </p>
+                    </div>
+                    <div class="hero-book-stack" aria-hidden="true">
+                        <span class="book one">《海燕女士富贵录》</span>
+                        <span class="book two">《重生之我附身张海燕女士下乡种田》</span>
+                        <span class="book three">《张海燕养花花不开一年又一年》</span>
+                    </div>
+                </div>
+
+                <a class="scroll-hint" href="#memories">
+                    <span>往下滑，继续看寿星专场</span>
+                    <span class="scroll-arrow" aria-hidden="true"></span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="memories section reveal" id="memories">
+                <div class="section-heading section-heading-tight">
+                    <p class="section-tag">Section 2 / 合照专区</p>
+                    <h2>母女合照，请直接欣赏，不必解释</h2>
+                </div>
+
+                <div class="photo-gallery">
+                    <article class="photo-card reveal">
+                        <!-- 把下面的图片路径换成你和妈妈的合照 -->
+                        <img src="assets/photos/photo1.jpg" alt="我和妈妈的合照 1" data-fallback-label="合照 1">
+                    </article>
+
+                    <article class="photo-card reveal">
+                        <!-- 把下面的图片路径换成你和妈妈的合照 -->
+                        <img src="assets/photos/photo2.jpg" alt="我和妈妈的合照 2" data-fallback-label="合照 2">
+                    </article>
+
+                    <article class="photo-card reveal">
+                        <!-- 把下面的图片路径换成你和妈妈的合照 -->
+                        <img src="assets/photos/photo3.jpg" alt="我和妈妈的合照 3" data-fallback-label="合照 3">
+                    </article>
+
+                    <article class="photo-card reveal">
+                        <!-- 把下面的图片路径换成你和妈妈的合照 -->
+                        <img src="assets/photos/photo4.jpg" alt="我和妈妈的合照 4" data-fallback-label="合照 4">
+                    </article>
+                </div>
+            </section>
+
+            <section class="interactive section reveal" id="interactive">
+                <div class="section-heading">
+                    <p class="section-tag">Section 3 / 互动专区</p>
+                    <h2>点一下就开场，仪式感必须拉满</h2>
+                    <p>
+                        今天的惊喜项目已经全部就位，
+                        一个负责生日歌和蛋糕登场，一个负责播放专属祝福视频。
+                    </p>
+                </div>
+
+                <div class="interactive-grid">
+                    <div class="control-panel">
+                        <button class="action-button candle-button" id="candleButton" type="button">
+                            点此按钮点蜡烛
+                        </button>
+                        <p class="button-note">蜡烛一点，寿星排面立刻拉满。</p>
+
+                        <button class="action-button surprise-button" id="surpriseButton" type="button">
+                            点此按钮点开惊喜
+                        </button>
+                        <p class="button-note">点开看看，专属惊喜马上播放。</p>
+
+                        <div class="mini-tips">
+                            <span>浏览器如果拦截自动播放，点一下页面就会恢复音乐。</span>
+                            <span>继续往下滑，有最终彩蛋！！！</span>
+                        </div>
+                    </div>
+
+                    <div class="floral-panel reveal" aria-hidden="true">
+                        <div class="floral-panel-ring"></div>
+                        <div class="floral-panel-bloom bloom-left"></div>
+                        <div class="floral-panel-bloom bloom-right"></div>
+                        <p class="floral-panel-tag">花开富贵模式已启动</p>
+                        <h3>今日关键词：喜气、金光、旺气</h3>
+                        <p>
+                            金光先闪起来，花朵先开起来，
+                            今天的寿星专场必须热热闹闹、精精神神。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ending section reveal" id="ending">
+                <div class="section-heading">
+                    <p class="section-tag">Section 4 / 终极彩蛋</p>
+                    <h2>最后为您颁发</h2>
+                </div>
+
+                <div class="award-certificate">
+                    <div class="certificate-corner corner-left" aria-hidden="true"></div>
+                    <div class="certificate-corner corner-right" aria-hidden="true"></div>
+                    <p class="certificate-mini">花开富贵荣誉认证</p>
+                    <h3>《恭喜张海燕同志荣获最佳寿星奖》</h3>
+                    <p class="certificate-main">
+                        特发此状，以资鼓励。
+                        愿张海燕女士继续保持精神抖擞、笑口常开、好运长驻、
+                        永远年轻、永远有劲。
+                        全家+全荷五小区+全浦兴街道+全金桥
+                        +全浦东+全上海+全中国+全世界+全宇宙
+                        第一大美女！！！！
+                    </p>
+                    <div class="certificate-footer">
+                        <span>颁发者：陈紫安</span>
+                        <span>认证章：幸福感爆棚</span>
+                    </div>
+                    <p class="certificate-english">
+                        This award is very official，very shining，very 花开富贵。
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="celebration-modal" id="cakeModal" aria-hidden="true">
+        <div class="celebration-backdrop" id="cakeModalBackdrop"></div>
+        <div class="celebration-panel cake-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cakeModalTitle">
+            <button class="close-modal" id="closeCakeModal" type="button" aria-label="关闭生日蛋糕弹窗">
+                ×
+            </button>
+            <p class="section-tag">生日歌模式</p>
+            <h2 id="cakeModalTitle">请许愿！</h2>
+            <p class="video-note">蛋糕已经摆好，蜡烛已经发光，气氛已经进入 very happy 状态。</p>
+
+            <div class="cake-scene" id="cakeScene">
+                <div class="wish-banner" id="wishBanner">请许愿！</div>
+                <div class="cake-wrap">
+                    <div class="cake-glow"></div>
+                    <div class="cake">
+                        <div class="candles">
+                            <span class="candle"><i class="flame"></i></span>
+                            <span class="candle"><i class="flame"></i></span>
+                            <span class="candle"><i class="flame"></i></span>
+                        </div>
+                        <div class="cake-top"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-bottom"></div>
+                    </div>
+                </div>
+                <p class="cake-message">
+                    祝张海燕女士福气满满，花开富贵，越活越带劲。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="celebration-modal" id="videoModal" aria-hidden="true">
+        <div class="celebration-backdrop" id="videoModalBackdrop"></div>
+        <div class="celebration-panel video-modal-panel" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+            <button class="close-modal" id="closeVideoModal" type="button" aria-label="关闭惊喜视频">
+                ×
+            </button>
+            <p class="section-tag">惊喜视频已开启</p>
+            <h2 id="videoModalTitle">专属生日祝福正在播放</h2>
+            <p class="video-note">看完记得笑一下，因为这是家庭限定版，funny and touching together。</p>
+
+            <!-- 把 assets/video/surprise.mp4 换成你录给妈妈的生日祝福视频 -->
+            <video id="surpriseVideo" controls playsinline preload="metadata" poster="">
+                <source src="assets/video/surprise.mp4" type="video/mp4">
+                抱歉，你的浏览器暂时不支持视频播放。
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
